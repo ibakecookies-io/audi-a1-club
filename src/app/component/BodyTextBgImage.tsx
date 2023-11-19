@@ -1,19 +1,56 @@
 
+export interface InputDataBodyTextBgImage {
+    title: string;
+    subtitle: string[];
+}
 
-export default function BodyTextBgImage( ){
+export default function BodyTextBgImage({inputData}: {inputData: InputDataBodyTextBgImage[]}){
     return(
-        <div className="relative border-t border-amber-400 bg-[url('/image/bg_text.JPG')] w-full h-full bg-cover bg-center md:h-[550px] bg-gray-700/40 bg-opacity-70">
-            <div className="p-4">
-                <div className="rounded-lg bg-black bg-opacity-50 p-4">
-                    <h1 className="mt-8 text-xl font-semibold">Поколение 8X (2010 – 2015)</h1>
-                    <p className="mt-4">
-                        Вначале A1 предлагался только как трехдверный хэтчбек.
-                        Пятидверная версия Спортбэк последовал 11 февраля 2012 года, и был доступен для заказа с середины ноября 2011 года и был официально представлен на Токийском автосалоне.
-                    </p>
-                    <p className="mt-4">
-                        A1 Sportback стал немного шире, чем 3-x дверный автомобиль и был немного сдвинут назад в пользу свободного пространства сзади, длина автомобиля осталась неизменной.
-                    </p>
+        <div
+            className="relative border-amber-400 bg-[url('/image/bg_text.jpg')] w-full h-[650px] bg-cover bg-center md:h-[900px] bg-gray-700/40 bg-opacity-70 flex flex-col m-auto p-auto">
+            <div
+                className="flex overflow-x-scroll hide-scroll-bar"
+            >
+                <div
+                    className="text-white mt-8 mb-32 flex flex-nowrap lg:ml-20 md:ml-2 ml-1"
+                >
+                    <div className="inline-block">
+                        <div
+                            className="rounded-lg bg-black bg-opacity-50 p-4 w-screen h-max max-w-xs overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out"
+                        >
+                            <h1 className="mt-10 text-xl font-semibold">{inputData[0].title}</h1>
+                            <p className="mt-4">
+                                {inputData[0].subtitle[0]}
+                            </p>
+                            <p className="mt-4">
+                                {inputData[0].subtitle[1]}
+                            </p>
+                            <p className="mb-10 mt-4">
+                                {inputData[0].subtitle[2]}
+                            </p>
+                        </div>
+                    </div>
+                    <div className="inline-block p-4">
+                        <div
+                            className="rounded-lg bg-black bg-opacity-50 p-4 w-screen h-max max-w-xs overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out"
+                        >
+                            <h1 className="mt-8 text-xl font-semibold">{inputData[1].title}</h1>
+                            <p className="mt-4">
+                                {inputData[1].subtitle[0]}
+                            </p>
+                            <p className="mt-4">
+                                {inputData[1].subtitle[1]}
+                            </p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            {}
+            <div className="flex mx-auto my-8">
+                <ul className="flex justify-center">
+                    <li className="h-6 w-6 rounded-full mx-2 cursor-pointer bg-gray-500"></li>
+                    <li className="h-6 w-6 rounded-full mx-2 cursor-pointer bg-gray-500"></li>
+                </ul>
             </div>
         </div>
     )

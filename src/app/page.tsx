@@ -9,6 +9,7 @@ import BodyText1 from "@/app/component/BodyText1";
 import BodyTextBgImage1 from "@/app/component/BodyTextBgImage1";
 import BodyTextBgImage2 from "@/app/component/BodyTextBgImage2";
 import BodyTextBgImageHorSla from "@/app/component/BodyTextBgImageHorSla";
+import {model8xData} from "@/app/resources/StringResourses";
 
 // bg-center - Делает хорошо перед
 
@@ -26,8 +27,7 @@ export default function Home() {
                 </div>
             </div>
             <BodyClubInfoText/>
-            <BodyText/>
-            <BodyTextBgImage/>
+            <BodyTextBgImage inputData={model8xData}/>
             <BodyTextBgImage1/>
             <BodyTextBgImage2/>
             <BodyTextBgImageHorSla/>
