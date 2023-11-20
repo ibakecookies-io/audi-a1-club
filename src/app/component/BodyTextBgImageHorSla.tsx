@@ -3,7 +3,7 @@ export default function BodyTextBgImageHorSla() {
         <div
             className="relative border-t border-amber-400 bg-[url('/image/audi_bg_1_2.jpg')] w-full h-[500px] bg-cover bg-center md:h-[900px] bg-gray-700/40 bg-opacity-70 flex flex-col m-auto p-auto">
             <div
-                className="flex overflow-x-scroll hide-scroll-bar"
+                className="flex overflow-x-scroll hscroll-smooth scroll-bar-gold hover:scroll-auto"
             >
                 <div
                     className="text-white mt-16 mb-32 flex flex-nowrap lg:ml-40 md:ml-20 ml-10 "
