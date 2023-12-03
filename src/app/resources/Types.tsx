@@ -3,7 +3,7 @@ export interface InputDataBodyTextBgImage {
     cardsData: CardsData []
 }
 
-interface CardsData{
+export interface CardsData{
     title: string;
     subtitle: string[];
 }

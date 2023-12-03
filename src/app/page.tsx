@@ -11,7 +11,7 @@ import BodyTextBgImage2 from "@/app/component/BodyTextBgImage2";
 import BodyTextBgImageHorSla from "@/app/component/BodyTextBgImageHorSla";
 import BodyTextBgImageCarousel from "@/app/component/BodyTextBgImageCarousel";
 import BodyTextBgImageCarousel2 from "@/app/component/BodyTextBgImageCarousel2";
-import {model8xData} from "@/app/resources/StringResourses"
+import {model8xData, model8xRestylingData, modelGbData} from "@/app/resources/StringResourses"
 
 
 // bg-center - Делает хорошо перед картинки
@@ -31,9 +31,11 @@ export default function Home() {
             </div>
             <BodyClubInfoText/>
             <BodyTextBgImage inputData={model8xData}/>
-            <BodyTextBgImage1/>
-            <BodyTextBgImage2/>
-            <BodyTextBgImageHorSla/>
+            <BodyTextBgImage inputData={model8xRestylingData}/>
+            {/*<BodyTextBgImage1/>
+            <BodyTextBgImage2/>*/}
+            <BodyTextBgImage inputData={modelGbData}/>
+  {/*          <BodyTextBgImageHorSla/>*/}
             <Footer/>
         </>
 
