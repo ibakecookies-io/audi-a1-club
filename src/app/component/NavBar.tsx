@@ -34,12 +34,9 @@ export default function NavBar() {
                     >
                         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                             <li className="flex items-center">
-                                <a
-                                    className="text-black lg:text-white lg:hover:text-blueGray-200 lg:hover:bg-gray-600 text-blueGray-700 hover:rounded px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                                    href="#"
-                                >
-                                    Мероприятия
-                                </a>
+
+                                <Link className="text-black lg:text-white lg:hover:text-blueGray-200 lg:hover:bg-gray-600 text-blueGray-700 hover:rounded px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                  href="/events">Мероприятия</Link>
                             </li>
                             <li className="flex items-center">
                                 <a
@@ -50,12 +47,8 @@ export default function NavBar() {
                                 </a>
                             </li>
                             <li className="flex items-center">
-                                <a
-                                    className="text-black lg:text-white lg:hover:text-blueGray-200 lg:hover:bg-gray-600 text-blueGray-700 hover:rounded px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                                    href="#"
-                                >
-                                    Сервисы и обслуживание
-                                </a>
+                                <Link className="text-black lg:text-white lg:hover:text-blueGray-200 lg:hover:bg-gray-600 text-blueGray-700 hover:rounded px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                      href="/service">Сервисы и обслуживание</Link>
                             </li>
                             <li className="flex items-center">
                                 <a
