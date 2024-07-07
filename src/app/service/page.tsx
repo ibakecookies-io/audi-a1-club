@@ -1,6 +1,6 @@
-import Navbar from "@/app/component/NavBar";
-import React from "react";
-import Link from "next/link";
+import Navbar from '@/app/component/NavBar';
+import React from 'react';
+import Link from 'next/link';
 
 export default function Page() {
     return (
@@ -10,12 +10,12 @@ export default function Page() {
                 <div
                     className="relative h-56 mx-8 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 sm:w-96">
                     <img
-                        src="https://a.d-cd.net/2Tit0-WeocX0JV-Xoikgljq2kX4-1920.jpg?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-                        alt="card-image" />
+                        src='https://a.d-cd.net/2Tit0-WeocX0JV-Xoikgljq2kX4-1920.jpg?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80'
+                        alt='card-image' />
                 </div>
                 <div className="p-6">
                     <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                        Автосервис "MOT Remworks"
+                        Автосервис &ldquo;MOT Remworks&ldquo;
                     </h5>
 
                     <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
@@ -57,12 +57,12 @@ export default function Page() {
                 <div
                     className="relative h-56 mx-8 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-white shadow-blue-gray-500/40 sm:w-96">
                     <img
-                        src="https://static.tildacdn.com/tild6166-3136-4664-b133-623563666133/____.png?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-                        alt="card-image" />
+                        src='https://static.tildacdn.com/tild6166-3136-4664-b133-623563666133/____.png?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80'
+                        alt='card-image' />
                 </div>
                 <div className="p-6">
                     <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                        Автосервис "VAG engine"
+                        Автосервис &ldquo;VAG engine&ldquo;
                     </h5>
                     <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
                         Профильный сервис послегарантийного обслуживания автомобилей Volkswagen, Audi, Skoda, Seat.

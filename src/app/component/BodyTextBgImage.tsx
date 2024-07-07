@@ -1,26 +1,22 @@
-import {InputDataBodyTextBgImage} from "@/app/resources/Types";
-import {CardsData} from "@/app/resources/Types";
+import {CardsData, InputDataBodyTextBgImage} from '@/app/resources/Types';
 
-import {JSX} from "react";
 
-function addCards(cards : CardsData[]): JSX.Element {
+function addCards(cards : CardsData[]): React.JSX.Element[] | undefined {
 
-    const cardsRender = cards?.map((item) => (
-            <div className="inline-block p-4">
-                <div
-                    className="rounded-lg bg-black bg-opacity-50 p-4 w-screen h-max max-w-xs overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                >
-                    <h1 className="mt-2 text-xl font-semibold">{item.title}</h1>
-                    {item.subtitle?.map(paragraph =>(
-                        <p className="mb-2 mt-2">
-                            {paragraph}
-                        </p>
-                    )) }
-                </div>
+    return cards?.map((item) => (
+        <div key={item.title} className="inline-block p-4">
+            <div
+                className="rounded-lg bg-black bg-opacity-50 p-4 w-screen h-max max-w-xs overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+                <h1 className="mt-2 text-xl font-semibold">{item.title}</h1>
+                {item.subtitle?.map(paragraph => (
+                    <p key={paragraph} className="mb-2 mt-2">
+                        {paragraph}
+                    </p>
+                ))}
             </div>
-        ))
-
-    return cardsRender;
+        </div>
+    ));
 
 }
 

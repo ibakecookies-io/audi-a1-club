@@ -13,8 +13,6 @@ export default function BodyTextBgImageCarousel() {
                         id="carousel-1"
                         name="carousel"
                         aria-hidden="true"
-                        hidden="true"
-                        defaultChecked="checked"
                     />
                     <div
                         className="carousel-item absolute opacity-0"
@@ -36,7 +34,6 @@ export default function BodyTextBgImageCarousel() {
                         id="carousel-2"
                         name="carousel"
                         aria-hidden="true"
-                        hidden="true"
                     />
                     <div
                         className="carousel-item absolute opacity-0"
@@ -58,7 +55,6 @@ export default function BodyTextBgImageCarousel() {
                         id="carousel-3"
                         name="carousel"
                         aria-hidden="true"
-                        hidden="true"
                     />
                     <div
                         className="carousel-item absolute opacity-0"

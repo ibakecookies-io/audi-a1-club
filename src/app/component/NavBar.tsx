@@ -36,7 +36,7 @@ export default function NavBar() {
                             <li className="flex items-center">
 
                                 <Link className="text-black lg:text-white lg:hover:text-blueGray-200 lg:hover:bg-gray-600 text-blueGray-700 hover:rounded px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                                  href="/events">Мероприятия</Link>
+                                  href='/events'>Мероприятия</Link>
                             </li>
                             <li className="flex items-center">
                                 <a
@@ -83,7 +83,7 @@ export default function NavBar() {
                                     <i className={
                                         (navbarOpen ? "text-black ": "text-white " ) +"fab fa-whatsapp text-lg leading-lg"
                                     } />
-                                    <span className="text-black lg:hidden inline-block ml-2">Whats'App</span>
+                                    <span className="text-black lg:hidden inline-block ml-2">Whats&aposApp</span>
                                 </a>
                             </li>
 
